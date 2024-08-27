@@ -1,34 +1,33 @@
 {
   "name": "test-api",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev": "npx nodemon",
-    "build": "rimraf ./build && tsc",
-    "lint": "eslint . --ext .ts",
-    "start": "npm run build && node build/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PaskeyDuet/test-api.git"
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint:check": "eslint",
+    "lint:fix": "eslint --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/PaskeyDuet/test-api/issues"
-  },
-  "homepage": "https://github.com/PaskeyDuet/test-api#readme",
+  "description": "",
   "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "@tsconfig/node22": "^22.0.0",
+    "@types/jest": "^29.5.12",
     "@types/node": "^22.5.0",
-    "@typescript-eslint/eslint-plugin": "^8.3.0",
-    "@typescript-eslint/parser": "^8.3.0",
     "eslint": "^9.9.1",
-    "nodemon": "^3.1.4",
-    "rimraf": "^6.0.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jest": "^28.8.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.9.0",
+    "jest": "^29.7.0",
+    "prettier": "3.3.3",
+    "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.3.0"
   }
 }
